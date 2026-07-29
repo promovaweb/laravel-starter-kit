@@ -1,0 +1,4 @@
+interface:
+  display_name: "Specsfy · TypeScript"
+  short_description: "TypeScript estrito e contratos seguros"
+  default_prompt: "Use $specsfy-specialist-typescript para orientar esta tarefa com padrões e validação especializados."

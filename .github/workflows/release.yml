@@ -1,0 +1,135 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*.*.*'
+  workflow_dispatch:
+    inputs:
+      publicar:
+        description: Publicar a versão informada
+        required: true
+        type: boolean
+        default: false
+      versao:
+        description: Versão sem o prefixo v, por exemplo 0.1.0
+        required: false
+        type: string
+
+concurrency:
+  group: release-${{ github.ref_name }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    name: Validar ou publicar release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Obter o repositório
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Validar changelog e contexto
+        env:
+          ENTRADA_PUBLICAR: ${{ inputs.publicar }}
+          ENTRADA_VERSAO: ${{ inputs.versao }}
+        run: |
+          set -euo pipefail
+
+          publicar=false
+          versao=''
+
+          if [[ "$GITHUB_REF_TYPE" == 'tag' ]]; then
+            publicar=true
+            versao="${GITHUB_REF_NAME#v}"
+          elif [[ "$GITHUB_EVENT_NAME" == 'workflow_dispatch' && "$ENTRADA_PUBLICAR" == 'true' ]]; then
+            publicar=true
+            versao="${ENTRADA_VERSAO#v}"
+          fi
+
+          test -f CHANGELOG.md
+          grep -Fqx '## [Não lançado]' CHANGELOG.md
+
+          if [[ "$publicar" == 'true' ]]; then
+            if [[ ! "$versao" =~ ^[0-9]+\.[0-9]+\.[0-9]+([+-][0-9A-Za-z.-]+)?$ ]]; then
+              echo "::error::Informe uma versão semântica válida."
+              exit 1
+            fi
+
+            if ! grep -Eq "^## \\[$versao\\] - [0-9]{4}-[0-9]{2}-[0-9]{2}$" CHANGELOG.md; then
+              echo "::error::O CHANGELOG.md não contém uma seção datada para $versao."
+              exit 1
+            fi
+
+            awk -v version="$versao" '
+              index($0, "## [" version "] - ") == 1 {
+                found = 1
+                next
+              }
+              found && /^## \[/ {
+                exit
+              }
+              found {
+                print
+              }
+              END {
+                if (!found) {
+                  exit 2
+                }
+              }
+            ' CHANGELOG.md > release-notes.md
+
+            if ! grep -q '[^[:space:]]' release-notes.md; then
+              echo "::error::A seção $versao do changelog está vazia."
+              exit 1
+            fi
+          fi
+
+          echo "PUBLICAR=$publicar" >> "$GITHUB_ENV"
+          echo "VERSAO=$versao" >> "$GITHUB_ENV"
+
+      - name: Criar a tag da execução manual
+        if: github.event_name == 'workflow_dispatch' && env.PUBLICAR == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          tag="v$VERSAO"
+
+          if git ls-remote --exit-code --tags origin "refs/tags/$tag" >/dev/null 2>&1; then
+            echo "::error::A tag $tag já existe."
+            exit 1
+          fi
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git tag -a "$tag" -m "Release $tag"
+          git push origin "$tag"
+
+      - name: Publicar a GitHub Release
+        if: env.PUBLICAR == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          tag="v$VERSAO"
+
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "::error::A GitHub Release $tag já existe."
+            exit 1
+          fi
+
+          gh release create "$tag" \
+            --title "Laravel Starter Kit $tag" \
+            --notes-file release-notes.md \
+            --verify-tag

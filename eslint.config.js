@@ -1,3 +1,7 @@
+/**
+ * Configura as regras de lint da aplicação e exclui dependências geradas ou
+ * vendorizadas que possuem ciclo de manutenção próprio.
+ */
 import js from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
 import prettier from 'eslint-config-prettier/flat';
@@ -95,7 +99,11 @@ export default [
             '@stylistic': stylistic,
         },
         rules: {
-            '@stylistic/brace-style': ['error', '1tbs', { allowSingleLine: false }],
+            '@stylistic/brace-style': [
+                'error',
+                '1tbs',
+                { allowSingleLine: false },
+            ],
             '@stylistic/padding-line-between-statements': [
                 'error',
                 ...paddingAroundControl,
@@ -104,6 +112,7 @@ export default [
     },
     {
         ignores: [
+            '.agents/skills/**',
             'vendor',
             'node_modules',
             'public',
@@ -123,7 +132,11 @@ export default [
         },
         rules: {
             curly: ['error', 'all'],
-            '@stylistic/brace-style': ['error', '1tbs', { allowSingleLine: false }],
+            '@stylistic/brace-style': [
+                'error',
+                '1tbs',
+                { allowSingleLine: false },
+            ],
         },
     },
 ];

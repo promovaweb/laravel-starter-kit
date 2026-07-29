@@ -1,0 +1,4 @@
+interface:
+  display_name: "Specsfy · Tailwind CSS"
+  short_description: "Tailwind com tokens e responsividade"
+  default_prompt: "Use $specsfy-specialist-tailwind-css para orientar esta tarefa com padrões e validação especializados."

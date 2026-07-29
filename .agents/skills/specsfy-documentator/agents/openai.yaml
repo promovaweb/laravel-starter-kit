@@ -1,0 +1,4 @@
+interface:
+  display_name: "Specsfy · Documentador"
+  short_description: "Constrói o mapa técnico completo da aplicação"
+  default_prompt: "Use $specsfy-documentator para reconstruir a documentação técnica completa do sistema em docs/."

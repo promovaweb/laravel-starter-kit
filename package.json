@@ -10,12 +10,16 @@
         "format:check": "prettier --check resources/",
         "lint": "eslint . --fix",
         "lint:check": "eslint .",
+        "skills": "skills",
+        "skills:list": "skills list",
+        "skills:restore": "skills experimental_install",
+        "skills:update": "skills update --project --yes",
         "types:check": "tsc --noEmit"
     },
     "devDependencies": {
         "@eslint/js": "^9.19.0",
-        "@stylistic/eslint-plugin": "^5.10.0",
         "@laravel/vite-plugin-wayfinder": "^0.1.3",
+        "@stylistic/eslint-plugin": "^5.10.0",
         "@types/node": "^22.13.5",
         "babel-plugin-react-compiler": "^1.0.0",
         "eslint": "^9.17.0",
@@ -26,6 +30,7 @@
         "eslint-plugin-react-hooks": "^7.0.0",
         "prettier": "^3.4.2",
         "prettier-plugin-tailwindcss": "^0.6.11",
+        "skills": "^1.5.20",
         "typescript-eslint": "^8.23.0"
     },
     "dependencies": {

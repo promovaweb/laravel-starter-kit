@@ -1,0 +1,4 @@
+interface:
+  display_name: "Specsfy · React"
+  short_description: "React composto, acessível e testável"
+  default_prompt: "Use $specsfy-specialist-react para orientar esta tarefa com padrões e validação especializados."

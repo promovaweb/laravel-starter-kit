@@ -1,0 +1,4 @@
+interface:
+  display_name: "05 · Tarefas"
+  short_description: "Cria tarefas com checklist progressivo"
+  default_prompt: "Use $specsfy-05-tasks para preencher tarefas rastreáveis com checklist PREP/EXECUTE/VERIFY/EVIDENCE/IMPROVE em specs/specs/<NNNN>-<slug>/spec.md. Orquestre transições automáticas com anúncio, execução e retomada na mesma conversa."

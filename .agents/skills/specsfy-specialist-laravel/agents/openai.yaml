@@ -1,0 +1,4 @@
+interface:
+  display_name: "Specsfy · Laravel"
+  short_description: "Laravel seguro do domínio à operação"
+  default_prompt: "Use $specsfy-specialist-laravel para orientar esta tarefa com padrões e validação especializados."

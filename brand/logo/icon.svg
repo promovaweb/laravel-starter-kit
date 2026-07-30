@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Ícone do Promovaweb Laravel Starter Kit</title>
+  <desc id="desc">Base em forma de L com módulos combináveis.</desc>
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="#00161E"/>
+  <path d="M104 92h78v238h226v78H104V92z" fill="#2AD5BE"/>
+  <rect x="226" y="104" width="66" height="66" rx="18" fill="#FC325B"/>
+  <rect x="326" y="104" width="66" height="66" rx="18" fill="#FC325B"/>
+  <rect x="226" y="204" width="66" height="66" rx="18" fill="#FC325B"/>
+  <rect x="326" y="204" width="66" height="66" rx="18" fill="#FC325B"/>
+</svg>

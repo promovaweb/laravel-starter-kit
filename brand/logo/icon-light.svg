@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Ícone do Promovaweb Laravel Starter Kit para fundo claro</title>
+  <desc id="desc">Base em petróleo com módulos em coral.</desc>
+  <path d="M104 92h78v238h226v78H104V92z" fill="#00161E"/>
+  <rect x="226" y="104" width="66" height="66" rx="18" fill="#BE123C"/>
+  <rect x="326" y="104" width="66" height="66" rx="18" fill="#BE123C"/>
+  <rect x="226" y="204" width="66" height="66" rx="18" fill="#BE123C"/>
+  <rect x="326" y="204" width="66" height="66" rx="18" fill="#BE123C"/>
+</svg>

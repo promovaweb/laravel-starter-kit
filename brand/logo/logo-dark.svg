@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 320" role="img" aria-labelledby="title desc">
+  <title id="title">Logo do Promovaweb Laravel Starter Kit para fundo escuro</title>
+  <desc id="desc">Símbolo modular e nome Laravel Starter Kit em assinatura horizontal clara.</desc>
+  <g transform="translate(24 24) scale(.53125)">
+    <path d="M104 92h78v238h226v78H104V92z" fill="#F2F8F9"/>
+    <rect x="226" y="104" width="66" height="66" rx="18" fill="#FDA4AF"/>
+    <rect x="326" y="104" width="66" height="66" rx="18" fill="#FDA4AF"/>
+    <rect x="226" y="204" width="66" height="66" rx="18" fill="#FDA4AF"/>
+    <rect x="326" y="204" width="66" height="66" rx="18" fill="#FDA4AF"/>
+  </g>
+  <text x="350" y="205" fill="#F2F8F9" font-family="Manrope, Inter, Arial, sans-serif" font-size="118" font-weight="750" letter-spacing="-4">Laravel Starter Kit</text>
+</svg>

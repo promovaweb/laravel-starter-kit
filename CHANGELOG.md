@@ -4,7 +4,13 @@ Todas as mudanças relevantes do Laravel Starter Kit são registradas neste
 arquivo. O projeto usa versionamento semântico e publica GitHub Releases a
 partir das entradas versionadas abaixo.
 
-## [Não lançado]
+## [0.1.1] - 2026-08-21
+
+### Adicionado
+
+- Publica o sistema de identidade visual e as referências de marca do starter
+  kit.
+
 
 ## [0.1.0] - 2026-07-29
 

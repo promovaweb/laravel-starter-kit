@@ -210,4 +210,4 @@ O projeto usa versionamento semântico. Mudanças incompatíveis pedem versão m
 
 ## Licença
 
-O campo `license` do `composer.json` declara a licença MIT. Ao enviar uma contribuição, você concorda que ela segue essa licença.
+O projeto é distribuído sob a [licença MIT](LICENSE), a mesma do starter oficial do Laravel de que o projeto deriva. Ao enviar uma contribuição, você concorda que ela entra sob essa mesma licença. A licença não concede o uso do nome e do logo do Laravel Starter Kit nem da marca Promovaweb.

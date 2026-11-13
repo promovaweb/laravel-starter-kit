@@ -18,6 +18,7 @@
 <p align="center">
   <a href="https://github.com/promovaweb/laravel-starter-kit/releases/latest"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/promovaweb/laravel-starter-kit"></a>
   <a href="https://github.com/promovaweb/laravel-starter-kit/actions/workflows/tests.yml"><img alt="Testes" src="https://github.com/promovaweb/laravel-starter-kit/actions/workflows/tests.yml/badge.svg"></a>
+  <a href="LICENSE"><img alt="Licença" src="https://img.shields.io/github/license/promovaweb/laravel-starter-kit"></a>
 </p>
 
 <p align="center">
@@ -213,4 +214,6 @@ Quer usar o Laravel Starter Kit em projetos de verdade, com acompanhamento? Conh
 
 ## Licença
 
-MIT, conforme o campo `license` do `composer.json`.
+Distribuído sob a [licença MIT](LICENSE), a mesma do starter oficial do
+Laravel de que o projeto deriva. A licença não concede o uso do nome e do
+logo do Laravel Starter Kit nem da marca Promovaweb.

@@ -6,6 +6,19 @@ partir das entradas versionadas abaixo.
 
 ## [Não lançado]
 
+## [0.2.0] - 2026-11-13
+
+### Adicionado
+
+- Adiciona o arquivo `LICENSE` com a licença MIT, a mesma do starter oficial
+  do Laravel de que o projeto deriva, e declara o campo `license` no
+  `package.json`.
+
+### Documentação
+
+- Inclui o badge de licença no `README.md` e explica a licença nas seções
+  Licença do `README.md` e do `CONTRIBUTING.md`.
+
 ## [0.1.2] - 2026-11-13
 
 ### Documentação

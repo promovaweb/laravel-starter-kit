@@ -4,6 +4,19 @@ Todas as mudanças relevantes do Laravel Starter Kit são registradas neste
 arquivo. O projeto usa versionamento semântico e publica GitHub Releases a
 partir das entradas versionadas abaixo.
 
+## [Não lançado]
+
+## [0.1.2] - 2026-11-13
+
+### Documentação
+
+- Cria o `README.md` para quem usa o template, com o cabeçalho da
+  Promovaweb, o Discord, a documentação, os planos e os repositórios usados.
+- Cria o `CONTRIBUTING.md` para quem contribui, com o ambiente, as regras do
+  código, os comandos de validação e o fluxo de release.
+- Adiciona o `.markdownlint.json` com os elementos HTML do cabeçalho.
+- Restaura a seção `## [Não lançado]` exigida pelo workflow `Release`.
+
 ## [0.1.1] - 2026-08-21
 
 ### Adicionado

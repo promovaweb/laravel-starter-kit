@@ -184,10 +184,10 @@ material permanecer.
 Auditar cada requisito contra evidência atual. Reler a tarefa, os comentários e
 as subtarefas. Confirmar testes, arquivos alterados e ausência de pendências.
 
-Quando o workspace tiver `em revisão`, atualizar e confirmar o status:
+Use `revisar` para a entrega validada, `pronto` após o commit e `publicado` após o push. Confira o status a cada operação.
 
 ```bash
-clickupfy task update <task-id> --status "em revisão"
+clickupfy task update <task-id> --status "<status da entrega>"
 clickupfy task get <task-id> --json
 ```
 
@@ -198,7 +198,7 @@ Publicar um comentário final somente depois da confirmação:
 
 - **Resultado:** <entrega>.
 - **Validações:** <testes e inspeções>.
-- **Status:** em revisão.
+- **Status:** <status confirmado>.
 - **Pendências:** nenhuma.
 ```
 

@@ -209,3 +209,7 @@ Use Wayfinder to generate TypeScript functions for Laravel routes. Import from `
 <!-- specsfy:framework:start -->
 @.specsfy/Spec.md
 <!-- specsfy:framework:end -->
+
+## Status das tarefas no ClickUp
+
+Após cada commit bem-sucedido, marque como `pronto` a tarefa ou subtarefa vinculada à entrega. Após o push bem-sucedido desse commit, marque-a como `publicado`. Consulte os demais status no [AGENTS.md](AGENTS.md#status-das-tarefas-no-clickup).

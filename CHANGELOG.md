@@ -4,6 +4,10 @@ Todas as mudanças relevantes do Laravel Starter Kit são registradas neste
 arquivo. O projeto usa versionamento semântico e publica GitHub Releases a
 partir das entradas versionadas abaixo.
 
+## [0.2.2] - 2026-11-22
+
+- Atualiza a identidade visual do projeto e sua apresentação no README.
+
 ## [0.2.1] - 2026-11-22
 
 - Documenta a atualização das tarefas do ClickUp para pronto após o commit e publicado após o push.

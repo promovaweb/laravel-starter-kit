@@ -1,8 +1,8 @@
 <p align="center">
-  <a href="https://github.com/promovaweb/laravel-starter-kit">
+  <a href="https://promovaweb.com/laravel/">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/promovaweb/laravel-starter-kit/main/brand/logo/logo-dark.png">
-      <img alt="Laravel Starter Kit" src="https://raw.githubusercontent.com/promovaweb/laravel-starter-kit/main/brand/logo/logo-light.png" width="420">
+      <source type="image/svg+xml" srcset="https://raw.githubusercontent.com/promovaweb/laravel-starter-kit/main/brand/logo/icon.svg">
+      <img alt="Laravel Starter Kit" src="https://raw.githubusercontent.com/promovaweb/laravel-starter-kit/main/brand/logo/icon.png" width="112" height="112">
     </picture>
   </a>
 </p>
@@ -26,7 +26,10 @@
 </p>
 
 <p align="center">
-  <a href="https://promovaweb.com/docs/">Documentação</a> ·
+  <a href="https://promovaweb.com/laravel/">Portal Laravel</a> ·
+  <a href="https://promovaweb.com/docs/">Docs da Promovaweb</a> ·
+  <a href="https://promovaweb.com/harness/">Harness</a> ·
+  <a href="https://promovaweb.com/ferramentas/">Ferramentas</a> ·
   <a href="https://promovaweb.com/discord">Discord</a> ·
   <a href="https://promovaweb.com/planos?utm_source=github&utm_medium=readme&utm_campaign=laravel-starter-kit">Planos da Promovaweb</a> ·
   <a href="CHANGELOG.md">Changelog</a>

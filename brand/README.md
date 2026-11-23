@@ -7,9 +7,7 @@ módulos, pontos de extensão e componentes do produto.
 
 ## Conceito visual
 
-O símbolo é um **L estrutural** acompanhado por quatro módulos. A base e a
-haste representam o ponto de partida; os módulos representam recursos que
-podem ser combinados para iniciar aplicações.
+Peças de um kit de aplicação. A cor de identificação é `#FC325B`.
 
 ## Arquivos oficiais
 

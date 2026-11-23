@@ -1,4 +1,9 @@
 {
+  "projectColor": {
+    "name": "Vermelho-coral",
+    "hex": "#FC325B",
+    "meaning": "O vermelho situa o kit na família Laravel e destaca a peça que pode ser usada para montar uma aplicação."
+  },
   "name": "Promovaweb Laravel Starter Kit",
   "families": {
     "primary": {
